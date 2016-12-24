@@ -1,0 +1,1 @@
+web: gunicorn self_hosted_church_website_django.wsgi
