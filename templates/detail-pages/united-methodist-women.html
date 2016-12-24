@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img class="img-responsive" img src="{% static "images/umw.jpg" %}">
+                <!--<p>Caption</p>-->
+            </div>
+
+            <div class="col-md-4">
+                <h3>United Methodist Women</h3>
+                <p><a href="http://www.unitedmethodistwomen.org" target="_blank">United Methodist Women</a> started in 1869 with six members. Today there are over 800,000 members. Pretty Prairie United Methodist Church has long had a faithful UMW. United Methodist Women are focused on ministries for women, children and youth. We are in mission to put our faith, hope and love into action for our community, country and world.</p>                
+				<h5 class="pull-right"><a href="{{ "/" }}">Back to Home</a></h5>
+            </div>
+
+        </div>
+        <!-- /.row -->
+        
+{% endblock content %}

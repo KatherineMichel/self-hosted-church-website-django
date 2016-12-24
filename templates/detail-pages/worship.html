@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img class="img-responsive" img src="{% static "images/church-sanctuary.jpg" %}">
+                <p>Church Sanctuary</p>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Worship Service and Sunday School</h3>
+                <p>Worship - Sundays at 11:00 a.m.</p>
+                <p>Sunday School - 10:00 a.m. to 10:45 a.m.</p> 
+                <p>Address - 201 S. Rhodes St., P.O. Box 324, Pretty Prairie, KS, 67570</p>
+                <p>Grade School Class - Meets in the south classroom on the west side of the Basement</p>
+                <p>Joy Fellowship (Young Adult) - Meets in the classroom on west side of the First Floor</p>
+                <p>Agape (Older Adult) - Meets on the west side of the Fellowship Hall</p>                
+				<h5 class="pull-right"><a href="{{ "/" }}">Back to Home</a></h5>
+            </div>
+
+        </div>
+        <!-- /.row -->
+        
+{% endblock content %}

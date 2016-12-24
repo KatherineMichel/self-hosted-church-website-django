@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img class="img-responsive" img src="{% static "images/welcome-sign.jpg" %}">
+                <p>Church Foyer</p>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Pastor's Welcome</h3>
+                <p>Welcome to Pretty Prairie United Methodist Church! On our website, you will find pictures and information about the church building. But it's not the building that is important. God's people are the church, growing together as his disciples through the many activities that take place here, locally and globally. The spirit of God's grace guides us to see every person as a vital part of the living and growing body of Christ. We look forward to seeing what God will help us accomplish in the years ahead. We welcome you to join us in transforming lives through Jesus Christ.</p> 
+                <p>Grace and peace,</p>  
+                <p>Pastor Susan Greene</p>                 
+				<h5 class="pull-right"><a href="{{ "/" }}">Back to Home</a></h5>
+            </div>
+
+        </div>
+        <!-- /.row -->
+        
+{% endblock content %}

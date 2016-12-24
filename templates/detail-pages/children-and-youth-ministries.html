@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img class="img-responsive" img src="{% static "images/childrens-choir.jpg" %}">
+                <!--<p>Caption</p>-->
+            </div>
+
+            <div class="col-md-4">
+                <h3>Children and Youth Ministries</h3>
+                <p>Children and youth play a special role in Pretty Prairie United Methodist Church. Activities include Children's Choir, Good News, Vacation Bible School, Community Youth Group, Sunday School, and Confirmation Class.</p>
+                <h5 class="pull-right"><a href="{{ "/" }}">Back to Home</a></h5>
+            </div>
+
+        </div>
+        <!-- /.row -->
+        
+{% endblock content %}

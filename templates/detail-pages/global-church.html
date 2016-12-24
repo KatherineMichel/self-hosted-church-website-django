@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img class="img-responsive" img src="{% static "images/rethink-church-logo.jpg" %}">
+                <!--<p>Caption</p>-->
+            </div>
+
+            <div class="col-md-4">
+                <h3>Global Church and Mission</h3>
+                <p>Pretty Prairie United Methodist Church is a member of the 12.8 million-strong, global <a href="http://www.umc.org" target="_blank">United Methodist Church</a>. The Church's mission is to transform the world by proclaiming God's grace and demonstrating love in action, locally and globally, through disciples of Jesus Christ. The United Methodist Church's motto is "Open Hearts, Open Minds, Open Doors."</p>
+                <p>We invite you to <a href="http://www.umc.org/what-we-believe" target="_blank">learn more</a>.</p>
+                <h5 class="pull-right"><a href="{{ "/" }}">Back to Home</a></h5>
+            </div>
+
+        </div>
+        <!-- /.row -->
+        
+{% endblock content %}
+

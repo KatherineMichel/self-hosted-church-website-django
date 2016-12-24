@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img class="img-responsive" img src="{% static "images/umw-mission.jpg" %}">
+                <!--<p>Caption</p>-->
+            </div>
+
+            <div class="col-md-4">
+                <h3>Community Outreach</h3>
+                <p></p>
+                <h5 class="pull-right"><a href="{{ "/" }}">Back to Home</a></h5>
+            </div>
+
+        </div>
+        <!-- /.row -->
+        
+{% endblock content %}
