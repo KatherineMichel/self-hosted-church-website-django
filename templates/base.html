@@ -1,0 +1,77 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+</head>
+
+  <body>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Pretty Prairie United Methodist Church<br>
+                    <small>Open Hearts, Open Minds, Open Doors</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav pull-right">
+          <a class="blog-nav-item" href="{{ "/" }}">Home</a>
+          <a class="blog-nav-item" href="{{ "/activities/" }}">Activities</a>
+          <a class="blog-nav-item" href="{{ "/blog/" }}">Blog</a>
+          <a class="blog-nav-item" href="{{ "/about/" }}">About</a>
+          <a class="blog-nav-item" href="https://www.facebook.com/prettyprairieumc/photos_stream?tab=photos_albums" target="_blank">Facebook Albums</a>
+          <a class="blog-nav-item" href="https://www.facebook.com/prettyprairieumc" target="_blank">Facebook Page</a>
+        </nav>
+      </div>
+    </div>
+
+<br>
+
+    <div class="page-content">
+      <div class="wrapper">
+        
+    {% block content %}{% endblock content %}
+        
+      </div>
+    </div>
+
+<hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>&copy; Pretty Prairie United Methodist Church</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

@@ -1,14 +1,14 @@
----
-layout: default
-permalink: /about/
----
+{% extends 'base.html' %}
 
+{% block content %}
+
+ 
         <!-- Portfolio Item Row -->
         <div class="row">
 
             <div class="col-md-8">
                 <!--<img class="img-responsive" img src="images/church-outside-large.jpg">-->
-                <img class="img-responsive" img src="{{ "/images/church-outside-large.jpg" | prepend: site.baseurl }}">
+                <img class="img-responsive" img src="{{ "/images/church-outside-large.jpg" }}">
             </div>
 
             <div class="col-md-4">
@@ -46,3 +46,5 @@ permalink: /about/
                 
         </div>
         <!-- /.row -->
+
+{% endblock content %}
