@@ -2,8 +2,6 @@ from django.conf.urls import include, url
 from django.views.generic.base import TemplateView
 from django.contrib import admin
 
-from . import views
-
 urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name="home.html"), name="home"),    
     url(r'^welcome/$', TemplateView.as_view(template_name="detail-pages/welcome.html"), name="welcome"),
@@ -17,7 +15,8 @@ urlpatterns = [
     url(r'^pretty-prairie/$', TemplateView.as_view(template_name="detail-pages/pretty-prairie.html"), name="pretty-prairie"),                    
     url(r'^activities/$', TemplateView.as_view(template_name="activities.html"), name="activities"),
     url(r'^about/$', TemplateView.as_view(template_name="about.html"), name="about"),
-    url(r'^blog/$', views.blog, name='blog'),
+    # url(r'^blog/$', include('blog.urls')),
+    url(r'^blog/', include('blog.urls')),
     url(r'^admin/', admin.site.urls),
 ]
 
