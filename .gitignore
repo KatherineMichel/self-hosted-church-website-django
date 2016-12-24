@@ -1,8 +1,11 @@
-*.pyc
-staticfiles
-
 # Mac
 .DS_Store
+
+# Non-Python
+staticfiles
+
+# ?
+*.pyc
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -60,13 +63,6 @@ coverage.xml
 *.log
 local_settings.py
 
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
 # Sphinx documentation
 docs/_build/
 
@@ -75,9 +71,6 @@ target/
 
 # pyenv
 .python-version
-
-# celery beat schedule file
-celerybeat-schedule
 
 # dotenv
 .env
