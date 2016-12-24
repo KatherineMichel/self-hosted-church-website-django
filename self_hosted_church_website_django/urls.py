@@ -5,7 +5,7 @@ from django.contrib import admin
 from . import views
 
 urlpatterns = [
-	url(r'^$', TemplateView.as_view(template_name="home.html"), name="home"),    
+    url(r'^$', TemplateView.as_view(template_name="home.html"), name="home"),    
     url(r'^welcome/$', TemplateView.as_view(template_name="detail-pages/welcome.html"), name="welcome"),
     url(r'^worship/$', TemplateView.as_view(template_name="detail-pages/worship.html"), name="worship"),
     url(r'^global-church/$', TemplateView.as_view(template_name="detail-pages/global-church.html"), name="global-church"),
