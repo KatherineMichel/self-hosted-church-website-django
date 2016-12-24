@@ -16,8 +16,6 @@ urlpatterns = [
     url(r'^community-outreach/$', TemplateView.as_view(template_name="detail-pages/community-outreach.html"), name="community-outreach"),
     url(r'^pretty-prairie/$', TemplateView.as_view(template_name="detail-pages/pretty-prairie.html"), name="pretty-prairie"),                    
     url(r'^activities/$', TemplateView.as_view(template_name="activities.html"), name="activities"),
-    # url(r'^blog/$', TemplateView.as_view(template_name="blog.html"), name="blog"),
-    # url(r'^blog/$,' include('blog.urls')),
     url(r'^about/$', TemplateView.as_view(template_name="about.html"), name="about"),
     url(r'^blog/$', views.blog, name='blog'),
     url(r'^admin/', admin.site.urls),
