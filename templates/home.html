@@ -1,26 +1,27 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 
         <!-- Projects Row -->
         <div class="row">
 
             <div class="col-md-4 portfolio-item">
-                <a href="{{ "/welcome/" | prepend: site.baseurl }}">
-                    <img class="img-responsive" img src="images/welcome-sign.jpg">
+                <a href="{{ "/welcome/" }}">
+                    <img class="img-responsive" src="{% static "images/welcome-sign.jpg" %}">
                 </a>
                 <p>Pastor's Welcome</p>
             </div>
 
             <div class="col-md-4 portfolio-item">
-                <a href="{{ "/worship/" | prepend: site.baseurl }}">
-                    <img class="img-responsive" img src="images/church-sanctuary.jpg">
+                <a href="{{ "/worship/" }}">
+                    <img class="img-responsive" src="{% static "images/church-sanctuary.jpg" %}">
                 </a>
                 <p>Worship Service and Sunday School</p>
             </div> 
 
             <div class="col-md-4 portfolio-item">
-                <a href="{{ "/global-church/" | prepend: site.baseurl }}">
-                    <img class="img-responsive" src="images/rethink-church-logo.jpg">
+                <a href="{{ "/global-church/" }}">
+                    <img class="img-responsive" src="{% static "images/rethink-church-logo.jpg" %}">
                 </a>
                 <p>Global Church and Mission</p>
             </div>
@@ -32,22 +33,22 @@
         <div class="row">
 
             <div class="col-md-4 portfolio-item">
-                <a href="{{ "/music-ministry/" | prepend: site.baseurl }}">
-                    <img class="img-responsive" src="images/adult-choir.jpg">
+                <a href="{{ "/music-ministry/" }}">
+                    <img class="img-responsive" src="{% static "images/adult-choir.jpg" %}">
                 </a>
                 <p>Music Ministry</p>
             </div>
 
             <div class="col-md-4 portfolio-item">
-                <a href="{{ "/church/" | prepend: site.baseurl }}">
-                    <img class="img-responsive" src="images/church-outside.jpg">
+                <a href="{{ "/church/" }}">
+                    <img class="img-responsive" src="{% static "images/church-outside.jpg" %}">
                 </a>
                 <p>Church History</p>
             </div>
 
             <div class="col-md-4 portfolio-item">
-                <a href="{{ "/children-and-youth-ministries/" | prepend: site.baseurl }}">
-                    <img class="img-responsive" src="images/childrens-choir.jpg">
+                <a href="{{ "/children-and-youth-ministries/" }}">
+                    <img class="img-responsive" src="{% static "images/childrens-choir.jpg" %}">
                 </a>
                 <p>Children and Youth Ministries</p>
             </div>
@@ -59,22 +60,22 @@
         <div class="row">
 
             <div class="col-md-4 portfolio-item">
-                <a href="{{ "/united-methodist-women/" | prepend: site.baseurl }}">
-                    <img class="img-responsive" src="images/umw.jpg">
+                <a href="{{ "/united-methodist-women/" }}">
+                    <img class="img-responsive" src="{% static "images/umw.jpg" %}">
                 </a>
                 <p>United Methodist Women</p>
             </div>
 
             <div class="col-md-4 portfolio-item">
-                <a href="{{ "/community-outreach/" | prepend: site.baseurl }}">
-                    <img class="img-responsive" src="images/umw-mission.jpg">
+                <a href="{{ "/community-outreach/" }}">
+                    <img class="img-responsive" src="{% static "images/umw-mission.jpg" %}">
                 </a>
                 <p>Community Outreach</p>
             </div>
 
             <div class="col-md-4 portfolio-item">
-                <a href="{{ "/pretty-prairie/" | prepend: site.baseurl }}">
-                    <img class="img-responsive" src="images/sunflowers.jpg">
+                <a href="{{ "/pretty-prairie/" }}">
+                    <img class="img-responsive" src="{% static "images/sunflowers.jpg" %}">
                 </a>
                 <p>Pretty Prairie, Kansas</p>
             </div>

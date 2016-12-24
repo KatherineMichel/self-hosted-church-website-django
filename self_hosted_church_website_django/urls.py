@@ -3,6 +3,7 @@ from django.views.generic.base import TemplateView
 from django.contrib import admin
 
 urlpatterns = [
+	url(r'^$', TemplateView.as_view(template_name="home.html")),
     url(r'^activities/$', TemplateView.as_view(template_name="activities.html")),
     url(r'^about/$', TemplateView.as_view(template_name="about.html")),
     url(r'^children-and-youth-ministries/$', TemplateView.as_view(template_name="detail-pages/children-and-youth-ministries.html")),
@@ -16,5 +17,7 @@ urlpatterns = [
     url(r'^worship/$', TemplateView.as_view(template_name="detail-pages/worship.html")),
     url(r'^admin/', admin.site.urls),
 ]
+
+
 
 
