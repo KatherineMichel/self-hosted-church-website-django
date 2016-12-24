@@ -1,7 +1,6 @@
----
-layout: default
-permalink: /activities/
----
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
 
         <div class="container">
             <div class="row">
@@ -14,18 +13,17 @@ permalink: /activities/
         <div class="row">
 
             <div class="col-md-4 portfolio-item">
-                    <!--<img class="img-responsive" img src="images/gretas-dog.jpg">-->
-                    <img class="img-responsive" img src="{{ "/images/gretas-dog.jpg" | prepend: site.baseurl }}">
+                    <img class="img-responsive" img src="{% static "images/gretas-dog.jpg" %}">
             </div>
 
             <div class="col-md-4 portfolio-item">
                     <!--<img class="img-responsive" img src="images/thanksgiving-service.jpg">-->
-                    <img class="img-responsive" img src="{{ "/images/thanksgiving-service.jpg" | prepend: site.baseurl }}">
+                    <img class="img-responsive" img src="{% static "images/thanksgiving-service.jpg" %}">
             </div> 
 
             <div class="col-md-4 portfolio-item">
                     <!--<img class="img-responsive" src="images/musicians.jpg">-->
-                    <img class="img-responsive" img src="{{ "/images/musicians.jpg" | prepend: site.baseurl }}">
+                    <img class="img-responsive" img src="{% static "images/musicians.jpg" %}">
             </div>
 
         </div>
@@ -308,3 +306,5 @@ permalink: /activities/
 -->
     </div>
     <!-- /.container -->
+
+{% endblock content %}
