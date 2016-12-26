@@ -16,7 +16,7 @@
                 </h1>-->
 
                 <!-- First Blog Post -->
-    {% for post in posts %}
+    			{% for post in posts %}
                 <h2> 
                     <a href="{{ post.url }}">{{ post.title }}</a>
                 </h2>
@@ -29,11 +29,10 @@
                 <hr>-->                     
                 <p>{{ post.text|linebreaksbr|truncatechars:600 }}</p>
                 <a class="btn btn-primary" href="{% url 'post-detail' pk=post.pk %}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-      
-                   <hr>
+    			{% endfor %}
+    			      
+                <hr>
    
-    {% endfor %}
-
                 <hr>
 
                 <!-- Pager -->
