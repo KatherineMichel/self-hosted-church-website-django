@@ -27,7 +27,7 @@
                 <hr>
                 <!--<img class="img-responsive" src="http://placehold.it/900x300" alt="">
                 <hr>-->                     
-                <p>{{ post.text|linebreaksbr }}</p>
+                <p>{{ post.text|linebreaksbr|truncatechars:600 }}</p>
                 <a class="btn btn-primary" href="{% url 'post-detail' pk=post.pk %}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
       
                    <hr>
