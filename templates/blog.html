@@ -1,5 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
+
+{% block title %}
+    Blog - {{ block.super }}
+{% endblock title %}
+
 {% block content %}
 
     <!-- Page Content -->

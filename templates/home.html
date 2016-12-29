@@ -1,5 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
+
+{% block title %}
+    Home - {{ block.super }}
+{% endblock title %}
+
 {% block content %}
 
         <!-- Projects Row -->
