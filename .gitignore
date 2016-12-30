@@ -4,10 +4,7 @@
 # Non-Python
 staticfiles
 
-# ?
-*.pyc
-
-# Byte-compiled / optimized / DLL files
+# Byte-compiled / optimized / DLL files, (.pyc, .pyo and .pyd)
 __pycache__/
 *.py[cod]
 *$py.class
